@@ -13,9 +13,9 @@ steps:
   uses: actions/setup-python@v5
 with:
   python-version: '3.11'
-- name: Install dependencies (optional)
-run: |
-  pip install pytest
-- name: Run tests
+  - name: Install dependencies (optional)
   run: |
-  pytest
+    pip install pytest
+  - name: Run tests
+  run: |
+    pytest
